@@ -5,6 +5,7 @@
   }
   
   header {
+    display: flex;
     background-color: #4986b8;
     color: white;
     height: 40px;
@@ -13,7 +14,7 @@
   }
   
   main {
-    height: 77vh;
+    min-height: 77vh;
     max-width: 800px;
     display: flex;
     flex-direction: row;
@@ -46,3 +47,23 @@
     padding: 20px;
     width: 100%;
   }
+
+@media screen and (max-device-width: 480px){
+  main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 0;
+  }
+  
+  header{
+    justify-content: center;
+  }
+}  
+
+footer{
+  position: static;
+  bottom: 0;
+  left: 0;
+
+}
