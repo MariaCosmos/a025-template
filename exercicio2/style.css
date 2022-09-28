@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+main{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  height: 20vh;
+}
+
+@media screen and (max-device-width: 480px){
+  main{
+    grid-template-columns: 1fr;
+  }
+  section{
+    align-items: flex-start;
+    color: red  ;
+  }
+}
+  
